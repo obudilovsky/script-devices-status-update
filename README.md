@@ -26,15 +26,22 @@ Instructions:
 `  -s DEVICEID, --serial DEVICEID                               Device serial number [mandatory option]`
 
 `  --get_status                                   To get status for device:`
+
 `                                                 ---> return exitcode 0 if device is available`
+
 `                                                 ---> return exitcode 1 if device is locked`
+
 `                                                 ---> return exitcode 2 if device is offline`
 
 `  --set_status                                   To set status for device:`
+
 `                                                 ---> use 0 if you want to change status to 'available'`
+
 `                                                 ---> use 1 if you want to change status to 'locked'`
+
 `                                                 ---> use 2 if you want to change status to 'offline'`
 
 `For example:`
 `                              ./devices_status_update.sh -s c43a0b --set_status 1`
+
 `                              To set status 'locked' for device 'c43a0b'`
